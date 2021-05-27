@@ -1,3 +1,10 @@
+use std::process;
+
+///implement library 
+
+//pub struct 
+
+
 fn main() {
-    println!("Hello, world!");
+    println!("blockchain test");
 }
