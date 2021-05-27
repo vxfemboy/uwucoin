@@ -1,5 +1,6 @@
 use std::fmt::{ self, Debug, Formatter };
-use crate::BlkHash;
+use crate::*;
+use super::hash::Hshb;
 
 pub struct Blk {
     pub index: u32,
@@ -32,5 +33,17 @@ impl Blk {
             nonce,
             payload,
         }
+    }
+}
+
+impl Hshb for Blk {
+    fn bytes(self) -> Vec<u8> {
+        let mut bytes = vec![];
+
+        bytes.extend(&u32_bytes(&self.index));
+        bytes.extend(&u128_bytes(&self.timestamp));
+        bytes.extend(&self.prev_blk);
+        bytes.extend(&u64_bytes(&self.nonce));
+        bytes.extend(self.payload.as_bytes());
     }
 }

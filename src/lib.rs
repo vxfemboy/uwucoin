@@ -1,6 +1,5 @@
 type BlkHash = Vec<u8>;
 // move file to ~/blockchain later
-
 use std::time::{ SystemTime, UNIX_EPOCH };
 
 pub fn now () -> u128 {
@@ -61,3 +60,4 @@ pub fn u128_bytes (u: &u128) -> [u8; 16] {
 
 mod blockchain;
 pub use crate::blockchain::block::Blk;
+pub use crate::blockchain::hash::Hshb;

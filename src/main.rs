@@ -1,4 +1,7 @@
-use lib::Blk;
+mod blockchain;
+use lib::*;
+use crate::blockchain::block::Blk;
+
 
 fn main() {
     println!("blockchain test\n\n");
