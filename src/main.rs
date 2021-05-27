@@ -1,9 +1,4 @@
-use std::process;
-
-///implement library 
-
-//pub struct 
-
+// use std::process;
 
 fn main() {
     println!("blockchain test");
