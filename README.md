@@ -1,4 +1,4 @@
-# UwUcoin <a href="https://github.com/legitnull/uwucoin"><img src="https://img.shields.io/tokei/lines/github/legitnull/uwucoin?color=green" /><img src="https://badgen.net/github/contributors/legitnull/uwucoin?color=green" /><img src="https://badgen.net/github/license/legitnull/uwucoin" />[![Discord](https://discordapp.com/api/guilds/818293256559001642/widget.png)](https://discord.gg/9XgqAW3Xfq)
+# UwUcoin <a href="https://github.com/legitnull/uwucoin"><img src="https://img.shields.io/tokei/lines/github/legitnull/uwucoin?color=green" /><img src="https://badgen.net/github/contributors/legitnull/uwucoin?color=green" />[![Discord](https://discordapp.com/api/guilds/818293256559001642/widget.png)](https://discord.gg/9XgqAW3Xfq)
  > UwUcoin is a proof of stake meme coin with a programmable blockchain written entirely in rust  
 
 <img src="https://cdn.discordapp.com/attachments/818600140621217842/818642602504880168/UwU_Coin_Words.png" />
