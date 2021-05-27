@@ -1,4 +1,5 @@
 type BlkHash = Vec<u8>;
+// move file to ~/blockchain later
 
 use std::time::{ SystemTime, UNIX_EPOCH };
 
