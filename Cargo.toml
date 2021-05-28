@@ -6,7 +6,8 @@ edition = "2018"
 
 [dependencies]
 hex = "0.4.3" #rewrite later
+crypto-hash = "0.3.4" #implement custom one later
 
-[lib]
-name = "lib"
-path = "src/lib.rs"
+[[bin]]
+name = "blkchn"
+path = "src/main.rs"
