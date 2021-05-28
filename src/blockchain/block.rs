@@ -10,11 +10,12 @@ pub struct Blk {
     pub prev_blk: BlkHash,
     pub nonce: u64,
     pub payload: String,
+    pub diff: u128,
 }
 
 impl Debug for Blk {
     fn fmt (&self, f: &mut Formatter) -> fmt::Result {
-        write!(f, "blk[{}]: {} at {} w/ {}", &self.index, &hex::encode(&self.hash), &self.timestamp, &self.payload )
+        write!(f, "blk[{}]: {} at {} w/ {}", &self.index, &hex::encode(&self.hash), &self.timestamp, &self.payload, diff: u128 ) 
     }
 }
 
@@ -25,6 +26,7 @@ impl Blk {
         prev_blk: BlkHash,
         nonce: u64,
         payload: String,
+        diff: u128,
     ) -> Self {
         Blk {
             index,
@@ -33,6 +35,7 @@ impl Blk {
             prev_blk, 
             nonce,
             payload,
+            diff,
         }
     }
 }
@@ -46,6 +49,7 @@ impl Hshb for Blk {
         bytes.extend(&self.prev_blk);
         bytes.extend(&u64_bytes(&self.nonce));
         bytes.extend(self.payload.as_bytes());
+        bytes.extend(&u128_bytes(&self.diff));
 
         bytes
     }
