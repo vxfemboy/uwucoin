@@ -9,4 +9,4 @@ hex = "0.4.3" #rewrite later
 
 [lib]
 name = "lib"
-path = "src/lib.rs"
+path = "src/blockchain/lib.rs"
