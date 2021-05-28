@@ -15,7 +15,7 @@ pub struct Blk {
 
 impl Debug for Blk {
     fn fmt (&self, f: &mut Formatter) -> fmt::Result {
-        write!(f, "blk[{}]: {} at {} w/ {}", &self.index, &hex::encode(&self.hash), &self.timestamp, &self.payload, diff: u128 ) 
+        write!(f, "blk[{}]: {} at {} w/ {}", &self.index, &hex::encode(&self.hash), &self.timestamp, &self.payload) 
     }
 }
 
