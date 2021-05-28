@@ -50,3 +50,7 @@ impl Hshb for Blk {
         bytes
     }
 }
+
+pub fn chkdiff (hash: &BlkHash, diff: u128) -> bool {
+    diff > dbyte128(&hash) // cvrt lst 16 bytes to init
+}

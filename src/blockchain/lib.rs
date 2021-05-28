@@ -58,9 +58,9 @@ pub fn u128_bytes (u: &u128) -> [u8; 16] {
     ]
 }
 
-pub fn dbyte128 (v: &Vec<u8>) -> u128 {
-    ((v[31] as u128) << 0xf * 8) |
-    ((v[30] as u128) << 0xe * 8) |
+pub fn dbyte128 (v: &Vec<u8>) -> u128 { //there has to be a better way of doing this
+    ((v[31] as u128) << 0xf * 8) |      // possibly via a for byte encoding?
+    ((v[30] as u128) << 0xe * 8) |      // move by 15 + inter as init 
     ((v[29] as u128) << 0xd * 8) |
     ((v[28] as u128) << 0xc * 8) |
     ((v[27] as u128) << 0xb * 8) |
@@ -75,4 +75,4 @@ pub fn dbyte128 (v: &Vec<u8>) -> u128 {
     ((v[18] as u128) << 0x2 * 8) |
     ((v[17] as u128) << 0x1 * 8) |
     ((v[16] as u128) << 0x0 * 8)
-}
+} // fix later
