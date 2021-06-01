@@ -38,7 +38,14 @@ impl Blk {
             diff,
         }
     }
+    pub fn mine (&mut self) {
+        for nonce_attempt in 0..(u64::max_value()) {
+            
+        }
+    }
 }
+
+
 
 impl Hshb for Blk {
     fn bytes (&self) -> Vec<u8> {
