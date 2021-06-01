@@ -9,9 +9,6 @@ fn main() {
 
     let mut block = Blk::new(0,0,vec![0, 32], 0, "Gen blk".to_owned(), 0x0000ffffffffffffffffffffffffff);
     
-    
-    //println!("{:?}", &block); //change debug to mainstream
-
     block.hash = block.hash();
     println!("{:?}", &block);
 
