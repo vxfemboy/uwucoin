@@ -39,8 +39,13 @@ impl Blk {
         }
     }
     pub fn mine (&mut self) {
-        for nonce_attempt in 0..(u64::max_value()) {
-            
+        for nattp in 0..(u64::max_value()) {
+            self.nonce = nattp;
+            let hash = self.hash();
+            if chkdiff(&hash, self.diff) {
+                self.hash = hash;
+                return
+            }
         }
     }
 }
