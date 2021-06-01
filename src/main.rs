@@ -17,5 +17,6 @@ fn main() {
 
 
     //mining
-    
+    block.mine();
+    println!("{:?}", &block);
 }
